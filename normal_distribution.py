@@ -10,3 +10,4 @@ for i in range(NUM):
     count[x-1]+=1
 print(count)
 
+
