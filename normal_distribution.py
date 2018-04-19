@@ -1,13 +1,14 @@
 #coding: UTF-8
+from scipy import stats
+from numpy.random import *
+import matplotlib.pyplot as plt
+NUM=10000;
+# 描画範囲の指定
 
-from random import Random
-count = 6*[0]
-NUM=10000
+r = randn(NUM)
 
-for i in range(NUM):
-    r = Random()
-    x = r.randint(1, 6)
-    count[x-1]+=1
-print(count)
+# 横軸の変数。縦軸の変数。
+plt.hist(r, bins=100)
 
-
+# 描画実行
+plt.show()
